@@ -5066,13 +5066,18 @@
         "affectsGlobalScope": false
       },
       "../src/common/entities/core.entity.ts": {
-        "version": "dec784df70dc4fcf935f15ea60868512bbf85aca94b35a96f7da4d2540664932",
+        "version": "f524654c3ca7e37d849508f79f7fc83c20edd9caec5bf2f94eb86c9e3476ece7",
         "signature": "330a671c81525c627aa660f3f2e1a51cb4aabc4faeb3209dca0b830aea762d35",
         "affectsGlobalScope": false
       },
       "../src/users/entities/user.entity.ts": {
-        "version": "475b9be2d43f7db36f32ac01a22d58495ca384ced9d4c410817bd861bf665369",
-        "signature": "c951b0e771b5bc777167ce7987fed887dd6967dca9e765eec8f98cca3881ad00",
+        "version": "9bab314fdc41f7a42e4ffa616974003f1223f8d65ba1c6cf086a2be626eceda8",
+        "signature": "c5c1fe17c3e551774683be76149f00a769f3ca901d97effcfa2162d110a94333",
+        "affectsGlobalScope": false
+      },
+      "../src/users/dtos/create-account.dto.ts": {
+        "version": "366602ec5088b25a6c7015eaa8775e0adb14b941c1b47b467980b959127bf207",
+        "signature": "6ae61aecdb7a908a031403b5e82f101329033122e8d030890db147c232a1bb09",
         "affectsGlobalScope": false
       },
       "../src/users/users.service.ts": {
@@ -5081,8 +5086,8 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.resolvers.ts": {
-        "version": "b4110269a99d54a801fc4f555763da1db3bf5fb7b1e978471a39dbcbfeff3303",
-        "signature": "6ace0e7a8370853f6f7795f8c8af2fe6c885673747c68a6a5dc61fad3bc5f5ff",
+        "version": "6da2aa7d64267be9a7a16688e8d492695de7fbd50b099861aa37175b664b3a8e",
+        "signature": "8c86ca1c3ca0b91aff7959fe3ef7942caca3a45678afcda35ecb449e1b288106",
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
@@ -10824,6 +10829,7 @@
         "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/common/entities/core.entity.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/main.ts": [
@@ -10866,7 +10872,12 @@
         "../src/restaurant/dtos/update-restaurant.dto.ts",
         "../src/restaurant/entities/restaurant.entity.ts"
       ],
+      "../src/users/dtos/create-account.dto.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/users/entities/user.entity.ts"
+      ],
       "../src/users/entities/user.entity.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/common/entities/core.entity.ts"
       ],
@@ -10879,6 +10890,7 @@
       ],
       "../src/users/users.resolvers.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/users/dtos/create-account.dto.ts",
         "../src/users/entities/user.entity.ts",
         "../src/users/users.service.ts"
       ],
@@ -15651,10 +15663,15 @@
         "../src/restaurant/dtos/update-restaurant.dto.ts",
         "../src/restaurant/entities/restaurant.entity.ts"
       ],
+      "../src/users/dtos/create-account.dto.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/users/entities/user.entity.ts"
+      ],
       "../src/users/entities/user.entity.ts": [
         "../src/common/entities/core.entity.ts"
       ],
       "../src/users/users.resolvers.ts": [
+        "../src/users/dtos/create-account.dto.ts",
         "../src/users/users.service.ts"
       ],
       "../src/users/users.service.ts": [
@@ -16869,6 +16886,7 @@
       "../src/restaurant/restaurant.module.ts",
       "../src/restaurant/restaurant.resolvers.ts",
       "../src/restaurant/restaurant.service.ts",
+      "../src/users/dtos/create-account.dto.ts",
       "../src/users/entities/user.entity.ts",
       "../src/users/users.module.ts",
       "../src/users/users.resolvers.ts",
