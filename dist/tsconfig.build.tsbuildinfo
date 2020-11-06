@@ -5691,18 +5691,18 @@
         "affectsGlobalScope": false
       },
       "../src/restaurant/dtos/update-restaurant.dto.ts": {
-        "version": "aa0f8ddca01121e33e7c47237bf8157823abea11cf5291c4e81966574d684fb4",
-        "signature": "f581fb83749adb003999985d627f7989fa10fe77146d38073fa8e7ac35c4f6d2",
+        "version": "e4188d599d667b02a048b4d39459040bf9785f717d69cdd26b6ae22579c052c0",
+        "signature": "36fda31d6e6985ca6f5c43ec2888414ac20087701ae04d5fbd99d9858cb77830",
         "affectsGlobalScope": false
       },
       "../src/restaurant/restaurant.service.ts": {
-        "version": "7c428ad2c89b0e43bf055a9040cd98394e2b3e90c893bb99ca9fa896f4b1e893",
-        "signature": "7f2d51c55d8f44616cee9b6623738487c54c6f13da38344e760bd3217325f02a",
+        "version": "bb706946fa189b7be66df1576613731e9acbbf347caec1ebff9d99bf5b176eb7",
+        "signature": "fe6a6ad0efa30d0b75918e640dd42b854fb0ae8dd1a3c4063995c0936bfd6a14",
         "affectsGlobalScope": false
       },
       "../src/restaurant/restaurant.resolvers.ts": {
-        "version": "214d45580bee00c0b38d9fc26d477b0841f6f1ac3024699ce7070ff613b78ed9",
-        "signature": "aaac26dceff377b929af7b1fefb8a8891627914261c4d0efe8ab7a46b6a66db0",
+        "version": "0f026ed478031be0f2e368da7357d96eccce2f4862fbe30ff610e1d0093ee289",
+        "signature": "2539cdadc455d93f9aa4e59b18bddcbd72e05d21c8203ac28b62df5102df689f",
         "affectsGlobalScope": false
       },
       "../src/restaurant/restaurant.module.ts": {
@@ -10826,6 +10826,7 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/restaurant/dtos/create-restaurant.dto.ts",
+        "../src/restaurant/dtos/update-restaurant.dto.ts",
         "../src/restaurant/entities/restaurant.entity.ts"
       ]
     },
@@ -15588,6 +15589,7 @@
       "../src/restaurant/restaurant.service.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/restaurant/dtos/create-restaurant.dto.ts",
+        "../src/restaurant/dtos/update-restaurant.dto.ts",
         "../src/restaurant/entities/restaurant.entity.ts"
       ]
     },
