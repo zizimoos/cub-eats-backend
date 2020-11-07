@@ -5070,9 +5070,14 @@
         "signature": "330a671c81525c627aa660f3f2e1a51cb4aabc4faeb3209dca0b830aea762d35",
         "affectsGlobalScope": false
       },
+      "../node_modules/@types/bcrypt/index.d.ts": {
+        "version": "18b9a9702d2fc7d3766b0c8124133c761ad25a9d767925005777eb2c2cd8aeba",
+        "signature": "18b9a9702d2fc7d3766b0c8124133c761ad25a9d767925005777eb2c2cd8aeba",
+        "affectsGlobalScope": false
+      },
       "../src/users/entities/user.entity.ts": {
-        "version": "9bab314fdc41f7a42e4ffa616974003f1223f8d65ba1c6cf086a2be626eceda8",
-        "signature": "c5c1fe17c3e551774683be76149f00a769f3ca901d97effcfa2162d110a94333",
+        "version": "81563f7bff0a27fd6b0c23b984d00da164eb6b4e9e8b5e97eb453f684189e618",
+        "signature": "fcaa905ca6da64603b7c7987fafc9a0fc13e1f12ccb915f9a956a81eb9213250",
         "affectsGlobalScope": false
       },
       "../src/users/dtos/create-account.dto.ts": {
@@ -5081,13 +5086,13 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.service.ts": {
-        "version": "27532500c47bccd2fdb20ed3fb6c51b04f1e5d2782ac153d6bc84670cb386e0b",
-        "signature": "88c20eebd00fc6a4a37da9159d94e5cdccde208c4babc024e752b3df6a589852",
+        "version": "4bcb25b5b0963492fea5111bef6f6014085fd33668e7d8c20bf35870f0493ddf",
+        "signature": "959dc5ea64d2529fe87271a46670910f0a09ea19ad8cd00a18bc835d78439e4b",
         "affectsGlobalScope": false
       },
       "../src/users/users.resolvers.ts": {
-        "version": "48ce4fb37dfc666c6257247688c66b77734d79e7f84fcb7e43dd9d061a50e249",
-        "signature": "067381d6e8e0caff29a7bdf6573a06e74faccead1ea07256f6ed13b9fee04129",
+        "version": "53646998548942b6366986e244a445e2e5160e2658fed787931bab5edaedbccd",
+        "signature": "227ed379a772e6023409c9aa6c38bf6680234556dde4a2475faca8d3a4237d97",
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
@@ -10877,7 +10882,9 @@
         "../src/users/entities/user.entity.ts"
       ],
       "../src/users/entities/user.entity.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/bcrypt/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/common/entities/core.entity.ts"
       ],
@@ -16047,6 +16054,7 @@
       "../node_modules/@types/babel__generator/index.d.ts",
       "../node_modules/@types/babel__template/index.d.ts",
       "../node_modules/@types/babel__traverse/index.d.ts",
+      "../node_modules/@types/bcrypt/index.d.ts",
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/connect/index.d.ts",
       "../node_modules/@types/content-disposition/index.d.ts",

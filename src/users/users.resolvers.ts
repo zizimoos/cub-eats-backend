@@ -16,13 +16,15 @@ export class UsersResolver {
 
   @Mutation(() => CreateAccountOutput)
   async createAccount(
-    @Args('input') CreateAccountInput: CreateAccountInput,
+    @Args('input') CreateAccountInputData: CreateAccountInput,
   ): Promise<CreateAccountOutput> {
     try {
-      const error = await this.userService.createAccount(CreateAccountInput);
+      const { ok, error } = await this.userService.createAccount(
+        CreateAccountInputData,
+      );
       if (error) {
         return {
-          ok: false,
+          ok,
           error,
         };
       }
