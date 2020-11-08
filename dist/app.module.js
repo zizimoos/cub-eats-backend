@@ -34,7 +34,7 @@ AppModule = __decorate([
                     DB_USERNAME: Joi.string().required(),
                     DB_PASSWORD: Joi.string().required(),
                     DB_DATABASE: Joi.string().required(),
-                    SECRET_KEY: Joi.string().required(),
+                    PRIVATE_KEY: Joi.string().required(),
                 }),
             }),
             typeorm_1.TypeOrmModule.forRoot({
@@ -53,7 +53,9 @@ AppModule = __decorate([
             }),
             users_module_1.UsersModule,
             common_module_1.CommonModule,
-            jwt_module_1.JwtModule.forRoot(),
+            jwt_module_1.JwtModule.forRoot({
+                privateKey: process.env.PRIVATE_KEY,
+            }),
         ],
         controllers: [],
         providers: [],

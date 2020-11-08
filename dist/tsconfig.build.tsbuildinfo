@@ -5065,11 +5065,6 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/jwt/jwt.service.ts": {
-        "version": "452541df94cb0f449f5e2a36f0307994d489b4e6f7db7fb54c3a0eddeed171c3",
-        "signature": "92acf589ebe01ed45180e5990950f0a41502f42dd0c838504d7baa500cc1e0cf",
-        "affectsGlobalScope": false
-      },
       "../src/common/entities/core.entity.ts": {
         "version": "f524654c3ca7e37d849508f79f7fc83c20edd9caec5bf2f94eb86c9e3476ece7",
         "signature": "330a671c81525c627aa660f3f2e1a51cb4aabc4faeb3209dca0b830aea762d35",
@@ -5720,9 +5715,24 @@
         "signature": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
         "affectsGlobalScope": false
       },
+      "../src/jwt/jwt.interfaces.ts": {
+        "version": "af9db64b18d460836af433221484b0ef4c00023651cdd16d70b0263cd4bc119f",
+        "signature": "6e5e2d6a8de1e6fae6fcf0af22b0acd739727c505274906774e034b16a8e7c88",
+        "affectsGlobalScope": false
+      },
+      "../src/jwt/jwt.constant.ts": {
+        "version": "d7e58391bd7545842355a966c039a089d9689dc7d10e134e46bbfae5651716b3",
+        "signature": "fe2946a77a9338c06388df29cce61b3c68e28f619a9d6c15bfc5406fdca99957",
+        "affectsGlobalScope": false
+      },
+      "../src/jwt/jwt.service.ts": {
+        "version": "c86f02d1d2eb2d0466e7f7f59ce0ceb639c639fd3a5135cacb6daaee9809b64b",
+        "signature": "f601282bdf35f74571d42bee88904d5176812c23d9050d825106bccb91a8990b",
+        "affectsGlobalScope": false
+      },
       "../src/users/users.service.ts": {
-        "version": "9ca1b3ec3d48cd2cadf2d5d0c037417b701febb6054d1d077f47db0cfe801a9b",
-        "signature": "14eb36918ef5f28c040541a2f6e1ad1cdf9e37224d55d381d181b4f0a48be88c",
+        "version": "603900d4bdf94cf0d74212ecc8ef92cb8fbca6e9a7b65cc72e7ebe2c2a34d14b",
+        "signature": "c923f1b052e575d61bb00d564d08452f8df22f9225c4424d18a30c0ea6f57cbf",
         "affectsGlobalScope": false
       },
       "../src/users/users.resolvers.ts": {
@@ -5731,7 +5741,7 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
-        "version": "bce888c39bab93d7b997ff1a9a6d0854d95e0a83dbc917e540fca0ffc43c8496",
+        "version": "98a3462750d62f159ad2659815163e2ddada095874c657f49746a87743853bf4",
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
@@ -5741,18 +5751,23 @@
         "affectsGlobalScope": false
       },
       "../src/jwt/jwt.module.ts": {
-        "version": "3e6ebb57e9e1d00de95d1a9c3ee8714487969ecb41fa9e67834f0a7ead753780",
-        "signature": "689b41f2ea3d945fe6e4d3c4786635e11460a8e694f30c6bbddf2694702feb6e",
+        "version": "801cfb024ecc9f285fa51833a04beb802d63788bb99b3f57ab97160ba658322f",
+        "signature": "d157d193c7316bb6837a8e379f3d2c8c46553b613cebc59767c209782af48262",
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "650c3ecc8be7ee528e66841e173a6055e7cbd2acf3d679248e69aab60d8d85f9",
+        "version": "b691629f795fc0dfb40870c1365b7b715328cc41c81446757238bdd99fa33e98",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
         "version": "c8a6b066a247042ac853ab45f23dc3c704d344d65f93b1562c5e53ee3fd7369c",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/jwt/interfaces/jwt-module-options.interface.ts": {
+        "version": "af9db64b18d460836af433221484b0ef4c00023651cdd16d70b0263cd4bc119f",
+        "signature": "6e5e2d6a8de1e6fae6fcf0af22b0acd739727c505274906774e034b16a8e7c88",
         "affectsGlobalScope": false
       },
       "../src/restaurant/entities/restaurant.entity.ts": {
@@ -10871,10 +10886,15 @@
       ],
       "../src/jwt/jwt.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../src/jwt/jwt.constant.ts",
+        "../src/jwt/jwt.interfaces.ts",
         "../src/jwt/jwt.service.ts"
       ],
       "../src/jwt/jwt.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/jsonwebtoken/index.d.ts",
+        "../src/jwt/jwt.constant.ts",
+        "../src/jwt/jwt.interfaces.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10936,9 +10956,7 @@
       ],
       "../src/users/users.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
-        "../src/jwt/jwt.service.ts",
         "../src/users/entities/user.entity.ts",
         "../src/users/users.resolvers.ts",
         "../src/users/users.service.ts"
@@ -15708,7 +15726,11 @@
         "../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
       "../src/jwt/jwt.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/jwt/jwt.interfaces.ts"
+      ],
+      "../src/jwt/jwt.service.ts": [
+        "../src/jwt/jwt.interfaces.ts"
       ],
       "../src/restaurant/dtos/create-restaurant.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15749,7 +15771,6 @@
         "../src/users/users.service.ts"
       ],
       "../src/users/users.service.ts": [
-        "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/jwt/jwt.service.ts",
         "../src/users/dtos/create-account.dto.ts",
@@ -16960,6 +16981,9 @@
       "../src/common/common.module.ts",
       "../src/common/dtos/output.dto.ts",
       "../src/common/entities/core.entity.ts",
+      "../src/jwt/interfaces/jwt-module-options.interface.ts",
+      "../src/jwt/jwt.constant.ts",
+      "../src/jwt/jwt.interfaces.ts",
       "../src/jwt/jwt.module.ts",
       "../src/jwt/jwt.service.ts",
       "../src/main.ts",
