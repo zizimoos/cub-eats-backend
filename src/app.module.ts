@@ -3,26 +3,29 @@ import * as Joi from 'joi';
 import { ConfigModule } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 import { TypeOrmModule } from '@nestjs/typeorm';
-// import { join } from 'path';
-// import { RestaurantModule } from './restaurant/restaurant.module';
-// import { Restaurant } from './restaurant/entities/restaurant.entity';
 import { UsersModule } from './users/users.module';
 import { CommonModule } from './common/common.module';
 import { User } from './users/entities/user.entity';
+// import { join } from 'path';
+// import { RestaurantModule } from './restaurant/restaurant.module';
+// import { Restaurant } from './restaurant/entities/restaurant.entity';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: process.env.NODE_ENV === 'dev' ? '.env.test' : 'env.test',
+      envFilePath: process.env.NODE_ENV === 'dev' ? '.env.dev' : 'env.test',
       ignoreEnvFile: process.env.NODE_ENV === 'prod',
       validationSchema: Joi.object({
-        NODE_ENV: Joi.string().valid('dev', 'prod'),
-        DB_HOST: Joi.string(),
-        DB_PORT: Joi.string(),
-        DB_USERNAME: Joi.string(),
-        DB_PASSWORD: Joi.string(),
-        DB_DATABASE: Joi.string(),
+        NODE_ENV: Joi.string()
+          .valid('dev', 'prod')
+          .required(),
+        DB_HOST: Joi.string().required(),
+        DB_PORT: Joi.string().required(),
+        DB_USERNAME: Joi.string().required(),
+        DB_PASSWORD: Joi.string().required(),
+        DB_DATABASE: Joi.string().required(),
+        SECRET_KEY: Joi.string().required(),
       }),
     }),
     TypeOrmModule.forRoot({
