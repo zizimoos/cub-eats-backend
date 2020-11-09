@@ -5736,8 +5736,8 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.resolvers.ts": {
-        "version": "3d6bcbd6998909357e94e718a6a1009de5c07416ccabfcee6a9b543063518ba9",
-        "signature": "303602ed7a4ce6f82dae621e5a6df3dbdd47ba1de4314597bf89d4860499307b",
+        "version": "ae55296a9eb5683b04816ce64ba57c1078b812ce319bc4fd1ae433457c89c7ad",
+        "signature": "9addb6356fd1349166dcdda0321aac51cd56352962656bd45ca2376d0d1cee3b",
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
@@ -5763,6 +5763,11 @@
       "../src/main.ts": {
         "version": "c8a6b066a247042ac853ab45f23dc3c704d344d65f93b1562c5e53ee3fd7369c",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/jwt/jwt.middleware.ts": {
+        "version": "09d742a8760f3ea2a460689822fcb8e8422073d39dc40c8545a7c25316acf4a6",
+        "signature": "c3577616865cc05285fca8e56416204385eb7e1a75e60ccc5cd1dabb09fa89de",
         "affectsGlobalScope": false
       },
       "../src/jwt/interfaces/jwt-module-options.interface.ts": {
@@ -10884,6 +10889,9 @@
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/typeorm/index.d.ts"
       ],
+      "../src/jwt/jwt.middleware.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
       "../src/jwt/jwt.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/jwt/jwt.constant.ts",
@@ -15725,6 +15733,9 @@
       "../node_modules/zen-observable-ts/lib/zenobservable.d.ts": [
         "../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
+      "../src/jwt/jwt.middleware.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
       "../src/jwt/jwt.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/jwt/jwt.interfaces.ts"
@@ -16984,6 +16995,40 @@
       "../src/jwt/interfaces/jwt-module-options.interface.ts",
       "../src/jwt/jwt.constant.ts",
       "../src/jwt/jwt.interfaces.ts",
+      [
+        "../src/jwt/jwt.middleware.ts",
+        [
+          {
+            "file": "../src/jwt/jwt.middleware.ts",
+            "start": 63,
+            "length": 13,
+            "code": 2420,
+            "category": 1,
+            "messageText": {
+              "messageText": "Class 'JwtMiddleware' incorrectly implements interface 'NestMiddleware<any, any>'.",
+              "category": 1,
+              "code": 2420,
+              "next": [
+                {
+                  "messageText": "Property 'use' is missing in type 'JwtMiddleware' but required in type 'NestMiddleware<any, any>'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "../node_modules/@nestjs/common/interfaces/middleware/nest-middleware.interface.d.ts",
+                "start": 71,
+                "length": 58,
+                "messageText": "'use' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          }
+        ]
+      ],
       "../src/jwt/jwt.module.ts",
       "../src/jwt/jwt.service.ts",
       "../src/main.ts",
