@@ -4,26 +4,12 @@ import { Repository } from 'typeorm';
 import { CreateAccountInput } from './dtos/create-account.dto';
 import { LoginInput } from './dtos/login.dto';
 import { User } from './entities/user.entity';
-<<<<<<< HEAD
-import { ConfigService } from '@nestjs/config';
-import { JwtService } from 'src/jwt/jwt.service';
-=======
->>>>>>> parent of 13c8979... .....
 
 @Injectable()
 export class UsersService {
   constructor(
     @InjectRepository(User) private readonly users: Repository<User>,
-<<<<<<< HEAD
-    private readonly config: ConfigService,
-    private readonly jwtService: JwtService,
-  ) {
-    this.jwtService.hello();
-    console.log(this.config.get('SECRET_KEY'));
-  }
-=======
   ) {}
->>>>>>> parent of 13c8979... .....
 
   async createAccount({
     email,

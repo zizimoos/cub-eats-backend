@@ -12,15 +12,10 @@ const Joi = require("joi");
 const config_1 = require("@nestjs/config");
 const graphql_1 = require("@nestjs/graphql");
 const typeorm_1 = require("@nestjs/typeorm");
-const jwt_module_1 = require("./jwt/jwt.module");
-const jwt_middleware_1 = require("./jwt/jwt.middleware");
+const users_module_1 = require("./users/users.module");
+const common_module_1 = require("./common/common.module");
+const user_entity_1 = require("./users/entities/user.entity");
 let AppModule = class AppModule {
-    configure(consumer) {
-        consumer.apply(jwt_middleware_1.JwtMiddleware).forRoutes({
-            path: '/graphql',
-            method: common_1.RequestMethod.POST,
-        });
-    }
 };
 AppModule = __decorate([
     common_1.Module({
@@ -47,14 +42,13 @@ AppModule = __decorate([
                 database: process.env.DB_DATABASE,
                 synchronize: process.env.NODE_ENV !== 'prod',
                 logging: process.env.NODE_ENV !== 'prod',
-                entities: [User],
+                entities: [user_entity_1.User],
             }),
             graphql_1.GraphQLModule.forRoot({
                 autoSchemaFile: true,
             }),
-            UsersModule,
-            CommonModule,
-            jwt_module_1.JwtModule.forRoot(),
+            users_module_1.UsersModule,
+            common_module_1.CommonModule,
         ],
         controllers: [],
         providers: [],
