@@ -5726,8 +5726,8 @@
         "affectsGlobalScope": false
       },
       "../src/jwt/jwt.service.ts": {
-        "version": "c86f02d1d2eb2d0466e7f7f59ce0ceb639c639fd3a5135cacb6daaee9809b64b",
-        "signature": "f601282bdf35f74571d42bee88904d5176812c23d9050d825106bccb91a8990b",
+        "version": "0bfd08ea78a66cb3f31f646c79f72f487f56f63bb4d43dc90169d5cbb15d54c7",
+        "signature": "f0324c3a3ce50596709f9ed98cd91036b648ce2f40cad8d000d946a25bd200b2",
         "affectsGlobalScope": false
       },
       "../src/users/users.service.ts": {
@@ -5736,7 +5736,7 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.resolvers.ts": {
-        "version": "ae55296a9eb5683b04816ce64ba57c1078b812ce319bc4fd1ae433457c89c7ad",
+        "version": "25e4708534e53bf7253b1df9d0f50395bf399e014438b2fe282f43de5c515062",
         "signature": "9addb6356fd1349166dcdda0321aac51cd56352962656bd45ca2376d0d1cee3b",
         "affectsGlobalScope": false
       },
@@ -5755,19 +5755,19 @@
         "signature": "d157d193c7316bb6837a8e379f3d2c8c46553b613cebc59767c209782af48262",
         "affectsGlobalScope": false
       },
+      "../src/jwt/jwt.middleware.ts": {
+        "version": "b40de9ab6520c8a7aaa4600d2d530e22d195dbaec16b41b1fbabd2f2bff80782",
+        "signature": "c37db27a7ad66568e8b156bad1f8ef0a445083ec49af6ab13327a402a665f994",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "b691629f795fc0dfb40870c1365b7b715328cc41c81446757238bdd99fa33e98",
-        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
+        "version": "6570c165039c002f2f4a57bce2e80fbd7f403ed0db6b0918b105a1102936e163",
+        "signature": "9e55d69c2879e4c1f6039d177c0daf79a72435ac51ec7d4f46fc72e8b0c503d6",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
         "version": "c8a6b066a247042ac853ab45f23dc3c704d344d65f93b1562c5e53ee3fd7369c",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
-        "affectsGlobalScope": false
-      },
-      "../src/jwt/jwt.middleware.ts": {
-        "version": "09d742a8760f3ea2a460689822fcb8e8422073d39dc40c8545a7c25316acf4a6",
-        "signature": "c3577616865cc05285fca8e56416204385eb7e1a75e60ccc5cd1dabb09fa89de",
         "affectsGlobalScope": false
       },
       "../src/jwt/interfaces/jwt-module-options.interface.ts": {
@@ -10875,6 +10875,7 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/joi/lib/index.d.ts",
         "../src/common/common.module.ts",
+        "../src/jwt/jwt.middleware.ts",
         "../src/jwt/jwt.module.ts",
         "../src/users/entities/user.entity.ts",
         "../src/users/users.module.ts"
@@ -10890,7 +10891,8 @@
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/jwt/jwt.middleware.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
       ],
       "../src/jwt/jwt.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15733,8 +15735,12 @@
       "../node_modules/zen-observable-ts/lib/zenobservable.d.ts": [
         "../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
-      "../src/jwt/jwt.middleware.ts": [
+      "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/jwt/jwt.middleware.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
       ],
       "../src/jwt/jwt.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -16995,40 +17001,7 @@
       "../src/jwt/interfaces/jwt-module-options.interface.ts",
       "../src/jwt/jwt.constant.ts",
       "../src/jwt/jwt.interfaces.ts",
-      [
-        "../src/jwt/jwt.middleware.ts",
-        [
-          {
-            "file": "../src/jwt/jwt.middleware.ts",
-            "start": 63,
-            "length": 13,
-            "code": 2420,
-            "category": 1,
-            "messageText": {
-              "messageText": "Class 'JwtMiddleware' incorrectly implements interface 'NestMiddleware<any, any>'.",
-              "category": 1,
-              "code": 2420,
-              "next": [
-                {
-                  "messageText": "Property 'use' is missing in type 'JwtMiddleware' but required in type 'NestMiddleware<any, any>'.",
-                  "category": 1,
-                  "code": 2741
-                }
-              ]
-            },
-            "relatedInformation": [
-              {
-                "file": "../node_modules/@nestjs/common/interfaces/middleware/nest-middleware.interface.d.ts",
-                "start": 71,
-                "length": 58,
-                "messageText": "'use' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          }
-        ]
-      ],
+      "../src/jwt/jwt.middleware.ts",
       "../src/jwt/jwt.module.ts",
       "../src/jwt/jwt.service.ts",
       "../src/main.ts",
