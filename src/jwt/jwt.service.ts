@@ -1,10 +1,8 @@
-import { Inject, Injectable } from '@nestjs/common';
-import * as jwt from 'jsonwebtoken';
-import { JwtModuleOptions } from './jwt.interfaces';
-import { CONFIG_OPTIONS } from './jwt.constant';
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class JwtService {
+<<<<<<< HEAD
   constructor(
     @Inject(CONFIG_OPTIONS) private readonly options: JwtModuleOptions,
   ) {
@@ -13,5 +11,9 @@ export class JwtService {
 
   sign(payload): string {
     return jwt.sign(payload, this.options.privateKey);
+=======
+  hello() {
+    console.log('hello');
+>>>>>>> parent of 6ef5f25... 5.5 JWT module done
   }
 }

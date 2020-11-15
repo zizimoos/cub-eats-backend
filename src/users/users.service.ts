@@ -12,7 +12,7 @@ import { JwtService } from 'src/jwt/jwt.service';
 export class UsersService {
   constructor(
     @InjectRepository(User) private readonly users: Repository<User>,
-    // private readonly config: ConfigService,
+    private readonly config: ConfigService,
     private readonly jwtService: JwtService,
   ) {
     // this.jwtService.hello();
@@ -58,7 +58,7 @@ export class UsersService {
           error: 'wrong password',
         };
       }
-      const token = this.jwtService.sign({ id: user.id });
+      const token = jwt.sign({ id: user.id }, this.config.get('SECRET_KEY'));
       return {
         ok: true,
         token,

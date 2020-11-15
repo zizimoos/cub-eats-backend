@@ -5065,6 +5065,11 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
+      "../src/jwt/jwt.service.ts": {
+        "version": "0e7566210eec06da991712bed4775916aa6939f8fa84c47bc8d1ae183ae38c05",
+        "signature": "c034ef85d215740ba64887bde89677ff614be55257fd86ca3621e53fd5055f8e",
+        "affectsGlobalScope": false
+      },
       "../src/common/entities/core.entity.ts": {
         "version": "f524654c3ca7e37d849508f79f7fc83c20edd9caec5bf2f94eb86c9e3476ece7",
         "signature": "330a671c81525c627aa660f3f2e1a51cb4aabc4faeb3209dca0b830aea762d35",
@@ -5715,24 +5720,9 @@
         "signature": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
         "affectsGlobalScope": false
       },
-      "../src/jwt/jwt.interfaces.ts": {
-        "version": "af9db64b18d460836af433221484b0ef4c00023651cdd16d70b0263cd4bc119f",
-        "signature": "6e5e2d6a8de1e6fae6fcf0af22b0acd739727c505274906774e034b16a8e7c88",
-        "affectsGlobalScope": false
-      },
-      "../src/jwt/jwt.constant.ts": {
-        "version": "d7e58391bd7545842355a966c039a089d9689dc7d10e134e46bbfae5651716b3",
-        "signature": "fe2946a77a9338c06388df29cce61b3c68e28f619a9d6c15bfc5406fdca99957",
-        "affectsGlobalScope": false
-      },
-      "../src/jwt/jwt.service.ts": {
-        "version": "0bfd08ea78a66cb3f31f646c79f72f487f56f63bb4d43dc90169d5cbb15d54c7",
-        "signature": "f0324c3a3ce50596709f9ed98cd91036b648ce2f40cad8d000d946a25bd200b2",
-        "affectsGlobalScope": false
-      },
       "../src/users/users.service.ts": {
-        "version": "603900d4bdf94cf0d74212ecc8ef92cb8fbca6e9a7b65cc72e7ebe2c2a34d14b",
-        "signature": "c923f1b052e575d61bb00d564d08452f8df22f9225c4424d18a30c0ea6f57cbf",
+        "version": "8a494722082389acb4179718fd286014770ace5189b0549f6bdcd866ba3ba6ed",
+        "signature": "14eb36918ef5f28c040541a2f6e1ad1cdf9e37224d55d381d181b4f0a48be88c",
         "affectsGlobalScope": false
       },
       "../src/users/users.resolvers.ts": {
@@ -5741,7 +5731,7 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
-        "version": "98a3462750d62f159ad2659815163e2ddada095874c657f49746a87743853bf4",
+        "version": "bce888c39bab93d7b997ff1a9a6d0854d95e0a83dbc917e540fca0ffc43c8496",
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
@@ -5751,8 +5741,8 @@
         "affectsGlobalScope": false
       },
       "../src/jwt/jwt.module.ts": {
-        "version": "801cfb024ecc9f285fa51833a04beb802d63788bb99b3f57ab97160ba658322f",
-        "signature": "d157d193c7316bb6837a8e379f3d2c8c46553b613cebc59767c209782af48262",
+        "version": "3e6ebb57e9e1d00de95d1a9c3ee8714487969ecb41fa9e67834f0a7ead753780",
+        "signature": "689b41f2ea3d945fe6e4d3c4786635e11460a8e694f30c6bbddf2694702feb6e",
         "affectsGlobalScope": false
       },
       "../src/jwt/jwt.middleware.ts": {
@@ -5761,18 +5751,13 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "6570c165039c002f2f4a57bce2e80fbd7f403ed0db6b0918b105a1102936e163",
+        "version": "ae528769b12205bfe049480f1a187400c350749cec5af43ce471595724412b19",
         "signature": "9e55d69c2879e4c1f6039d177c0daf79a72435ac51ec7d4f46fc72e8b0c503d6",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
         "version": "c8a6b066a247042ac853ab45f23dc3c704d344d65f93b1562c5e53ee3fd7369c",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
-        "affectsGlobalScope": false
-      },
-      "../src/jwt/interfaces/jwt-module-options.interface.ts": {
-        "version": "af9db64b18d460836af433221484b0ef4c00023651cdd16d70b0263cd4bc119f",
-        "signature": "6e5e2d6a8de1e6fae6fcf0af22b0acd739727c505274906774e034b16a8e7c88",
         "affectsGlobalScope": false
       },
       "../src/restaurant/entities/restaurant.entity.ts": {
@@ -10896,15 +10881,10 @@
       ],
       "../src/jwt/jwt.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/jwt/jwt.constant.ts",
-        "../src/jwt/jwt.interfaces.ts",
         "../src/jwt/jwt.service.ts"
       ],
       "../src/jwt/jwt.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@types/jsonwebtoken/index.d.ts",
-        "../src/jwt/jwt.constant.ts",
-        "../src/jwt/jwt.interfaces.ts"
+        "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10966,7 +10946,9 @@
       ],
       "../src/users/users.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/jwt/jwt.service.ts",
         "../src/users/entities/user.entity.ts",
         "../src/users/users.resolvers.ts",
         "../src/users/users.service.ts"
@@ -15743,11 +15725,7 @@
         "../node_modules/@types/express/index.d.ts"
       ],
       "../src/jwt/jwt.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/jwt/jwt.interfaces.ts"
-      ],
-      "../src/jwt/jwt.service.ts": [
-        "../src/jwt/jwt.interfaces.ts"
+        "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/restaurant/dtos/create-restaurant.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15788,6 +15766,7 @@
         "../src/users/users.service.ts"
       ],
       "../src/users/users.service.ts": [
+        "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/jwt/jwt.service.ts",
         "../src/users/dtos/create-account.dto.ts",
@@ -16994,16 +16973,10 @@
       "../node_modules/zen-observable-ts/lib/index.d.ts",
       "../node_modules/zen-observable-ts/lib/types.d.ts",
       "../node_modules/zen-observable-ts/lib/zenobservable.d.ts",
-      "../src/app.module.ts",
       "../src/common/common.module.ts",
       "../src/common/dtos/output.dto.ts",
       "../src/common/entities/core.entity.ts",
-      "../src/jwt/interfaces/jwt-module-options.interface.ts",
-      "../src/jwt/jwt.constant.ts",
-      "../src/jwt/jwt.interfaces.ts",
       "../src/jwt/jwt.middleware.ts",
-      "../src/jwt/jwt.module.ts",
-      "../src/jwt/jwt.service.ts",
       "../src/main.ts",
       "../src/restaurant/dtos/create-restaurant.dto.ts",
       "../src/restaurant/dtos/update-restaurant.dto.ts",
@@ -17013,10 +16986,7 @@
       "../src/restaurant/restaurant.service.ts",
       "../src/users/dtos/create-account.dto.ts",
       "../src/users/dtos/login.dto.ts",
-      "../src/users/entities/user.entity.ts",
-      "../src/users/users.module.ts",
-      "../src/users/users.resolvers.ts",
-      "../src/users/users.service.ts"
+      "../src/users/entities/user.entity.ts"
     ]
   },
   "version": "3.9.7"
