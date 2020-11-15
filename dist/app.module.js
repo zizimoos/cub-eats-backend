@@ -12,9 +12,6 @@ const Joi = require("joi");
 const config_1 = require("@nestjs/config");
 const graphql_1 = require("@nestjs/graphql");
 const typeorm_1 = require("@nestjs/typeorm");
-const users_module_1 = require("./users/users.module");
-const common_module_1 = require("./common/common.module");
-const user_entity_1 = require("./users/entities/user.entity");
 const jwt_module_1 = require("./jwt/jwt.module");
 const jwt_middleware_1 = require("./jwt/jwt.middleware");
 let AppModule = class AppModule {
@@ -30,18 +27,15 @@ AppModule = __decorate([
         imports: [
             config_1.ConfigModule.forRoot({
                 isGlobal: true,
-                envFilePath: process.env.NODE_ENV === 'dev' ? '.env.dev' : 'env.test',
+                envFilePath: process.env.NODE_ENV === 'dev' ? '.env.test' : 'env.test',
                 ignoreEnvFile: process.env.NODE_ENV === 'prod',
                 validationSchema: Joi.object({
-                    NODE_ENV: Joi.string()
-                        .valid('dev', 'prod')
-                        .required(),
-                    DB_HOST: Joi.string().required(),
-                    DB_PORT: Joi.string().required(),
-                    DB_USERNAME: Joi.string().required(),
-                    DB_PASSWORD: Joi.string().required(),
-                    DB_DATABASE: Joi.string().required(),
-                    SECRET_KEY: Joi.string().required(),
+                    NODE_ENV: Joi.string().valid('dev', 'prod'),
+                    DB_HOST: Joi.string(),
+                    DB_PORT: Joi.string(),
+                    DB_USERNAME: Joi.string(),
+                    DB_PASSWORD: Joi.string(),
+                    DB_DATABASE: Joi.string(),
                 }),
             }),
             typeorm_1.TypeOrmModule.forRoot({
@@ -53,13 +47,13 @@ AppModule = __decorate([
                 database: process.env.DB_DATABASE,
                 synchronize: process.env.NODE_ENV !== 'prod',
                 logging: process.env.NODE_ENV !== 'prod',
-                entities: [user_entity_1.User],
+                entities: [User],
             }),
             graphql_1.GraphQLModule.forRoot({
                 autoSchemaFile: true,
             }),
-            users_module_1.UsersModule,
-            common_module_1.CommonModule,
+            UsersModule,
+            CommonModule,
             jwt_module_1.JwtModule.forRoot(),
         ],
         controllers: [],
