@@ -5065,11 +5065,6 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/jwt/jwt.service.ts": {
-        "version": "0e7566210eec06da991712bed4775916aa6939f8fa84c47bc8d1ae183ae38c05",
-        "signature": "c034ef85d215740ba64887bde89677ff614be55257fd86ca3621e53fd5055f8e",
-        "affectsGlobalScope": false
-      },
       "../src/common/entities/core.entity.ts": {
         "version": "f524654c3ca7e37d849508f79f7fc83c20edd9caec5bf2f94eb86c9e3476ece7",
         "signature": "330a671c81525c627aa660f3f2e1a51cb4aabc4faeb3209dca0b830aea762d35",
@@ -5720,8 +5715,13 @@
         "signature": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
         "affectsGlobalScope": false
       },
+      "../src/jwt/jwt.service.ts": {
+        "version": "061803a4e57ea0519892a7d0d2845cdb54074c55b18e83d5828f1d02ab4565dc",
+        "signature": "389e5321ea9166481c8d856d98c697a390342b2ab5c8cf5892ec9d0900cccba8",
+        "affectsGlobalScope": false
+      },
       "../src/users/users.service.ts": {
-        "version": "8a494722082389acb4179718fd286014770ace5189b0549f6bdcd866ba3ba6ed",
+        "version": "1c0db70411314e073cdc8edf61eed47510769fc01fc92533b1057fc16b1646a6",
         "signature": "14eb36918ef5f28c040541a2f6e1ad1cdf9e37224d55d381d181b4f0a48be88c",
         "affectsGlobalScope": false
       },
@@ -5731,7 +5731,7 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
-        "version": "bce888c39bab93d7b997ff1a9a6d0854d95e0a83dbc917e540fca0ffc43c8496",
+        "version": "936c9b81cb0b4ef0d0f657cabffd04cb7d074f01d8a22ea43f364ba45bb40fdd",
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
@@ -10946,9 +10946,7 @@
       ],
       "../src/users/users.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
-        "../src/jwt/jwt.service.ts",
         "../src/users/entities/user.entity.ts",
         "../src/users/users.resolvers.ts",
         "../src/users/users.service.ts"
@@ -16973,10 +16971,33 @@
       "../node_modules/zen-observable-ts/lib/index.d.ts",
       "../node_modules/zen-observable-ts/lib/types.d.ts",
       "../node_modules/zen-observable-ts/lib/zenobservable.d.ts",
+      "../src/app.module.ts",
       "../src/common/common.module.ts",
       "../src/common/dtos/output.dto.ts",
       "../src/common/entities/core.entity.ts",
       "../src/jwt/jwt.middleware.ts",
+      "../src/jwt/jwt.module.ts",
+      [
+        "../src/jwt/jwt.service.ts",
+        [
+          {
+            "file": "../src/jwt/jwt.service.ts",
+            "start": 86,
+            "length": 18,
+            "messageText": "Cannot find module './jwt.interfaces' or its corresponding type declarations.",
+            "category": 1,
+            "code": 2307
+          },
+          {
+            "file": "../src/jwt/jwt.service.ts",
+            "start": 174,
+            "length": 14,
+            "messageText": "Cannot find name 'CONFIG_OPTIONS'.",
+            "category": 1,
+            "code": 2304
+          }
+        ]
+      ],
       "../src/main.ts",
       "../src/restaurant/dtos/create-restaurant.dto.ts",
       "../src/restaurant/dtos/update-restaurant.dto.ts",
@@ -16986,7 +17007,10 @@
       "../src/restaurant/restaurant.service.ts",
       "../src/users/dtos/create-account.dto.ts",
       "../src/users/dtos/login.dto.ts",
-      "../src/users/entities/user.entity.ts"
+      "../src/users/entities/user.entity.ts",
+      "../src/users/users.module.ts",
+      "../src/users/users.resolvers.ts",
+      "../src/users/users.service.ts"
     ]
   },
   "version": "3.9.7"

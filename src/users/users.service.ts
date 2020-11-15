@@ -15,8 +15,8 @@ export class UsersService {
     private readonly config: ConfigService,
     private readonly jwtService: JwtService,
   ) {
-    // this.jwtService.hello();
-    // console.log(this.config.get('SECRET_KEY'));
+    this.jwtService.hello();
+    console.log(this.config.get('SECRET_KEY'));
   }
 
   async createAccount({
